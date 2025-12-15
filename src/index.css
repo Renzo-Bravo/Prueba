@@ -1,0 +1,45 @@
+:root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Colors */
+  --bg-clr: hsl(0, 0%, 100%);
+  --text-clr: hsl(0, 0%, 100%);
+  --text-clr-o: hsl(0, 0%, 0%);
+  --primary--clr: hsl(2, 61%, 45%);
+  --primary--clr-o: hsl(from var(--primary--clr) h s calc(l - 10));
+  --secondary--clr: hsl(48, 61%, 45%);
+  /* -- */
+  /* Fonts-size */
+  --fs-100: 1rem; /*16*px*/
+  --fs-200: 1.25rem; /*20px*/
+  --fs-300: 1.5rem; /*24px*/
+  --fs-400: 1.75rem; /*28px*/
+  --fs-500: 2rem; /*32px*/
+  --fs-600: 2.25rem; /*36px*/
+  --fs-700: 2.5rem; /*40px*/
+  --fs-800: 2.75rem; /*44px*/
+  --fs-900: 3rem; /*48px*/
+  --fs-1000: 3.25rem; /*52px*/
+  --fs-1100: 3.5rem; /*56px*/
+  --fs-1200: 3.75rem; /*60px*/
+  --fs-1300: 4rem; /*64px*/
+  /* -- */
+  /* max-width */
+  --Mw: 960px;
+  /* -- */
+  --altura_header: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rotis Serif Std", serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+[id] {
+  scroll-margin-top: 90px;
+}

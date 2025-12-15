@@ -1,0 +1,25 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info p {
+  font-size: var(--fs-200);
+  width: 90%;
+  text-align: center;
+}
+
+.fediap{
+  width: 90vw;
+}
+
+.separadorEnt{
+  display: none;
+}
+
+.separadorMed {
+  width: 95vw;
+}
+
+

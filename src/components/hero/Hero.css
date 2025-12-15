@@ -1,0 +1,62 @@
+.heroSection {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 15%;
+  padding-bottom: 5%;
+  padding-inline: 4%;
+  font-size: 16px;
+  z-index: 0;
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("@/assets/images/Foto1.jpg"); 
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.heroSection::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.inscripcion-button {
+  background-color: var(--primary--clr);
+  border: 2px solid var(--primary--clr);
+  border-radius: 10px;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.inscripcion-button:active {
+  background-color: var(-secondary--clr);
+  border-color: var(--secondary--clr);
+  transform: scale(1.05);
+}
+
+.hero-info {
+  font-size: var(--fs-200);
+}
