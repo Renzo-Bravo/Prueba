@@ -52,7 +52,7 @@ export default function Header() {
           </li>
           <li className="li-links">
             <a
-              href="#eventContent"
+              href="#info-id"
               className="links"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -70,7 +70,7 @@ export default function Header() {
           </li>
           <li className="li-links">
             <a
-              href="#activitySchedule"
+              href="#calendar-id"
               className="links"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -79,7 +79,7 @@ export default function Header() {
           </li>
           <li className="li-links">
             <a
-              href="#joinSection"
+              href="#form-id"
               className="links"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -88,7 +88,7 @@ export default function Header() {
           </li>
           <li className="li-links">
             <a
-              href="#contact"
+              href="#footer-id"
               className="links"
               onClick={() => setIsMenuOpen(false)}
             >

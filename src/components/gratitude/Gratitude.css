@@ -30,3 +30,9 @@
   padding: 15px;
   display: inline-block;
 }
+
+@media (min-width:768px){
+  .menu-btn{
+    font-size: var(--fs-400);
+  }
+}

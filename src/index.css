@@ -46,7 +46,7 @@ html {
   scroll-margin-top: 90px;
 }
 
-.text{
+.text {
   font-size: var(--fs-200);
   text-align: center;
   width: 90%;
@@ -57,4 +57,13 @@ html {
   font-weight: bold;
   text-align: center;
   margin-bottom: 0.4rem;
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: var(--fs-400);
+  }
+  .title {
+    font-size: var(--fs-600);
+  }
 }

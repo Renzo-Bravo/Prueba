@@ -85,3 +85,17 @@
   cursor: pointer;
 }
 
+@media (min-width: 768px){
+  .date-price{
+    font-size: var(--fs-300);
+  }
+  .btn-enviar{
+    font-size: var(--fs-300);
+  }
+  .form-group label{
+    font-size: var(--fs-200);
+  }
+  .form-group input{
+    font-size: var(--fs-300);
+  }
+}

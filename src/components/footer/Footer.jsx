@@ -4,14 +4,25 @@ import FondoFooter from "@/assets/design/food-bank_56.png";
 
 export default function Footer() {
   return (
-    <footer className="footer" id="footer-id">
+    <footer
+      className="footer"
+      id="footer-id"
+    >
       <div className="footer-head">
-        <img src={FondoFooter} alt="Fondo Footer" className="fondo-img" />
+        <img
+          src={FondoFooter}
+          alt="Fondo Footer"
+          className="fondo-img"
+        />
       </div>
 
       <section className="footer-end">
         <div className="footer-column">
-          <img src={Logo} alt="Cruzada Logo" className="footer-logo" />
+          <img
+            src={Logo}
+            alt="Cruzada Logo"
+            className="footer-logo"
+          />
           <p className="footer-description">
             Evento solidario para familias, empresas y organizaciones.
           </p>
@@ -20,12 +31,24 @@ export default function Footer() {
         <div className="footer-column">
           <h4>Secciones</h4>
           <ul>
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#evento"></a>Evento</li>
-            <li><a href="#disertantes">Disertantes</a></li>
-            <li><a href="#disertantes">Cronograma</a></li>
-            <li><a href="#joinSection">Inscripción</a></li>
-            <li><a href="#disertantes">Contacto</a></li>
+            <li>
+              <a href="#hero">Inicio</a>
+            </li>
+            <li>
+              <a href="#info-id">Evento</a>
+            </li>
+            <li>
+              <a href="#speakers">Disertantes</a>
+            </li>
+            <li>
+              <a href="#calendar-id">Cronograma</a>
+            </li>
+            <li>
+              <a href="#form-id">Inscripción</a>
+            </li>
+            <li>
+              <a href="#footer-id">Contacto</a>
+            </li>
           </ul>
         </div>
 
@@ -47,4 +70,3 @@ export default function Footer() {
     </footer>
   );
 }
-

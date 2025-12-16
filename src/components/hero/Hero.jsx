@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="hero-content">
         <h2 className="hero-title">
           VII Jornadas Regionales de FEDIAP
-          <span>CoFormación Docente de Escuelas Agrotécnicas</span>
+        CoFormación Docente de Escuelas Agrotécnicas
         </h2>
 
         <h2 className="hero-subtitle">

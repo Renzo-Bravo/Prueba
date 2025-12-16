@@ -4,7 +4,10 @@ import "./Companie.css";
 
 export default function Empresas() {
   return (
-    <section className="companie-section" id="companie-id">
+    <section
+      className="companie-section"
+      id="companie-id"
+    >
       <h2 className="title">Empresas</h2>
 
       <div className="container">
@@ -42,13 +45,13 @@ export default function Empresas() {
         <CompanieCard
           title="Becas Alimentación"
           price="$120.000"
-          text="Gastos de almuerzo, merienda y cena para 3 días..."
+          text="Gastos de almuerzo, merienda y cena para 3 días durante las jornadas por docente"
         />
 
         <CompanieCard
           title="Becas Pernocte"
           price="$45.000"
-          text="Gastos de alojamiento y desayuno para 3 días..."
+          text="Gastos de alojamiento y desayuno para 3 días durante las jornadas por docente"
         />
       </div>
     </section>
