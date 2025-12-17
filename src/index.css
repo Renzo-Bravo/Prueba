@@ -40,6 +40,8 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #fff;
+
 }
 
 [id] {
