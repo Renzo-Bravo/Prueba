@@ -44,7 +44,7 @@
 }
 
 .secondary-title {
-  font-size: 1.3rem;
+  font-size: var(--fs-300);
   color: var(--primary--clr);
   margin-bottom: 12px;
   font-weight: 700;
@@ -52,7 +52,7 @@
 }
 
 .area-text {
-  font-size: 1rem;
+  font-size: var(--fs-200);
   color: #333;
   line-height: 1.5;
   max-width: 300px;
@@ -75,7 +75,11 @@
   }
 
   .secondary-title {
-    font-size: 1.5rem;
+    font-size: var(--fs-400);
+  }
+
+  .area-text{
+    font-size: var(--fs-300);
   }
 
   .icon-circle {
@@ -102,5 +106,13 @@
   .area-icon {
     width: 70px;
     height: 70px;
+  }
+
+  .secondary-title {
+    font-size: var(--fs-500);
+  }
+
+  .area-text{
+    font-size: var(--fs-400);
   }
 }

@@ -1,5 +1,5 @@
 .calendar-section {
-  padding: 0px 20px; 
+  padding: 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
 
 .calendar-container {
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .day-card {
@@ -40,13 +40,13 @@
 
 .day-title h3 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: var(--fs-300);
   font-weight: 600;
 }
 
 .event-row {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   padding: 15px 20px;
   border-bottom: 1px solid #f0f0f0;
 }
@@ -64,9 +64,9 @@
   background-color: rgba(208, 208, 33, 0.204);
   color: var(--primary--clr);
   padding: 4px 10px;
-  border-radius: 6px; 
+  border-radius: 6px;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: var(--fs-200);
   border: 1px solid rgba(208, 208, 33, 0.3);
 }
 
@@ -74,7 +74,7 @@
   margin: 0;
   color: #333;
   line-height: 1.5;
-  font-size: 0.95rem;
+  font-size: var(--fs-200);
 }
 
 @media (min-width: 768px) {
@@ -87,13 +87,13 @@
   }
 
   .event-row {
-    flex-direction: row; 
+    flex-direction: row;
     padding: 20px 25px;
-    align-items: center; 
+    align-items: center;
   }
 
   .time-column {
-    flex: 0 0 130px; 
+    flex: 0 0 130px;
     margin-bottom: 0;
   }
 
@@ -102,9 +102,16 @@
     border-left: 2px solid #f0f0f0;
   }
 
+  .day-title h3 {
+    font-size: var(--fs-400);
+  }
+
   .time-badge {
-    font-size: 0.85rem;
-    border-radius: 20px;
+    font-size: var(--fs-100);
+  }
+
+  .event-activity {
+    font-size: var(--fs-300);
   }
 }
 
@@ -113,17 +120,23 @@
     max-width: 850px;
   }
 
-  .day-title h3 {
-    font-size: 1.3rem;
-  }
-
   .event-row:hover {
     background-color: #f9fdfa;
-    transform: translateX(5px); 
+    transform: translateX(5px);
     transition: all 0.2s ease;
   }
 
+  .day-title h3 {
+    font-size: var(--fs-500);
+  }
+
+  .time-badge {
+    font-size: var(--fs-200);
+    width: 140px;
+    margin-right: 20px;
+  }
+
   .event-activity {
-    font-size: 1.05rem;
+    font-size: var(--fs-400);
   }
 }

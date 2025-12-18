@@ -20,17 +20,10 @@
 
 .info-section .text {
   max-width: 800px;
-  font-size: 1.1rem;
   line-height: 1.8;
   color: #333;
   text-align: center;
   text-wrap: balance;
-}
-
-@media (min-width: 768px) {
-  .info-section .text {
-    font-size: 1.25rem;
-  }
 }
 
 @media (min-width: 1024px) {

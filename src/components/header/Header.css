@@ -73,13 +73,13 @@
 }
 
 .ul-links.open {
-  height: calc(100vh - 72px);
+  height: 100vh;
 }
 
 .links {
   text-decoration: none;
   color: #333;
-  font-size: 1.5rem;
+  font-size: var(--fs-700);
   font-weight: 700;
   transition: color 0.3s;
 }
@@ -105,7 +105,7 @@
   }
 
   .links {
-    font-size: 1rem;
+    font-size:var(--fs-300);
     color: var(--primary--clr);
     padding: 8px 12px;
     border-radius: 8px;

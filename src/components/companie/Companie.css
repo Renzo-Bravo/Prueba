@@ -33,7 +33,7 @@
 
 .title-companie {
   color: #fff;
-  font-size: 2rem;
+  font-size: var(--fs-400);
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -46,7 +46,7 @@
   border-radius: 2px;
 }
 
-.container, 
+.container,
 .container-becas {
   width: 100%;
   display: flex;
@@ -70,13 +70,6 @@
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-}
-
-.card-title {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  color: white; 
-  font-weight: 700;
 }
 
 .card-body {
@@ -120,7 +113,7 @@
 }
 
 @media (min-width: 768px) {
-  .container, 
+  .container,
   .container-becas {
     flex-direction: row;
     flex-wrap: wrap;
@@ -131,17 +124,21 @@
   .companie-card {
     width: calc(50% - 20px);
   }
+
+  .title-companie {
+    font-size: var(--fs-700);
+  }
 }
 
 @media (min-width: 1024px) {
   .container {
     max-width: 1200px;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
   }
 
   .companie-card {
     width: 33%;
-    height: 420px; 
+    height: 420px;
   }
 
   .companie-card:hover {
