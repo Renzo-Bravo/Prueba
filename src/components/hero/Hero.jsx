@@ -21,7 +21,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <a href="#form-id" className="inscripcion-button">
+        <a href="https://donaronline.org/fundacion-cruzada-patagonica/sumate-como-amigo-de-cruzada-patagonica" className="inscripcion-button">
           Inscribite ahora
         </a>
       </div>

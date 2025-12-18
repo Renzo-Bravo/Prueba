@@ -46,9 +46,10 @@ export default function Footer() {
           </div>
           
           <div className="footer-social">
-            <a href="https://youtube.com" target="_blank" className="social-link"><i className="fab fa-youtube"></i>YT</a>
-            <a href="https://instagram.com" target="_blank" className="social-link"><i className="fab fa-instagram"></i>IG</a>
-            <a href="https://facebook.com" target="_blank" className="social-link"><i className="fab fa-facebook-f"></i>FB</a>
+            <a href="https://www.facebook.com/fundacioncruzadapatagonica" target="_blank" className="social-link"><i className="fab fa-facebook-f"></i>FB</a>
+            <a href="https://www.instagram.com/cruzadapatagonica/" target="_blank" className="social-link"><i className="fab fa-instagram"></i>IG</a>
+            <a href="https://www.linkedin.com/company/fundacion-cruzada-patagonica/" target="_blank" className="social-link"><i className="fab fa-linkedin"></i>LK</a>
+            <a href="https://www.youtube.com/@CruzadaPatagonica" target="_blank" className="social-link"><i className="fab fa-youtube"></i>YT</a>
           </div>
         </div>
       </section>

@@ -38,7 +38,7 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  font-size: var(--fs-300);
+  font-size: var(--fs-200);
   font-weight: 600;
   color: #333;
   transition: color 0.3s ease;

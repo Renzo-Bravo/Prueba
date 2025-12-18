@@ -44,7 +44,7 @@
 }
 
 .secondary-title {
-  font-size: var(--fs-300);
+  font-size: var(--fs-200);
   color: var(--primary--clr);
   margin-bottom: 12px;
   font-weight: 700;
@@ -52,7 +52,7 @@
 }
 
 .area-text {
-  font-size: var(--fs-200);
+  font-size: var(--fs-100);
   color: #333;
   line-height: 1.5;
   max-width: 300px;
