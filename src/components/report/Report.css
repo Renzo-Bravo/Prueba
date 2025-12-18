@@ -1,124 +1,127 @@
 .contact-section {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 60px 20px;
+  gap: 50px;
 }
 
-.ediciones {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.textReport {
-  font-size: 17px;
+.calendar-header-left {
+  margin-bottom: 25px;
 }
 
 .titleReport {
   color: var(--primary--clr);
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  font-weight: 700;
 }
 
-.envelope,
-.telephone {
-  color: var(--primary--clr);
-  width: 20px;
-  height: 20px;
+.title-underline-left {
+  width: 50px;
+  height: 4px;
+  background-color: var(--primary--clr);
+  border-radius: 2px;
 }
 
-.ediciones span {
-  font-size: var(--fs-200);
-  font-weight: 600;
-  display: block;
-  margin: 0.5rem 0;
-}
-
-.ediciones a {
-  font-size: var(--fs-100);
-  display: block;
-  color: blue;
-  text-decoration: none;
-  margin: 1rem 0;
-}
-
-.contacto {
-  text-align: center;
+.ediciones, .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.contact-item {
   text-align: center;
-  gap: 0.5rem;
-  margin-bottom: 0.4rem;
 }
 
-.contact-item a {
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
+.textReport {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.fuentes-label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.links-wrapper {
   display: flex;
-  justify-content: center;
-  margin: 4px 0;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.contact-item a:hover {
-  text-decoration: underline;
+.report-link {
+  color: #333;
+  text-decoration: none;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.report-link:hover {
+  border-color: var(--primary--clr);
+  color: var(--primary--clr);
+  background: #fffafa;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.contact-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 12px;
+  transition: color 0.3s ease;
+}
+
+.contact-icon {
+  color: var(--primary--clr);
+  width: 24px;
+  height: 24px;
+}
+
+.contact-item-link:hover {
+  color: var(--primary--clr);
 }
 
 @media (min-width: 1024px) {
   .contact-section {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-    gap: 90px;
+    padding: 80px 40px;
+    gap: 100px;
   }
 
-  .titleReport {
-    font-size: var(--fs-400);
-  }
-
-  .ediciones,
-  .contacto {
+  .ediciones, .contacto {
     flex: 1;
     align-items: flex-start;
     text-align: left;
   }
 
-  .textReport {
-    font-size: var(--fs-300);
+  .title-underline-left {
+    margin: 0;
   }
 
-  .ediciones span {
-    font-size: var(--fs-300);
-    margin: 0.8rem 0;
+  .links-wrapper {
+    flex-direction: row;
   }
 
-  .ediciones a {
-    font-size: var(--fs-200);
-    margin: 0.6rem 0;
-  }
-
-  .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .envelope,
-  .telephone {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-
-  .contact-item a {
-    font-size: var(--fs-200);
-    font-weight: bold;
+  .contact-item-link {
+    justify-content: flex-start;
+    padding-left: 0;
   }
 }

@@ -5,7 +5,7 @@ import "./Companie.css";
 export default function Empresas() {
   return (
     <section className="companie-section" id="companie-id">
-      <div className="calendar-header">
+      <div className="companie-header">
         <h2 className="title-companie">Empresas</h2>
         <div className="title-underline"></div>
       </div>
@@ -32,7 +32,7 @@ export default function Empresas() {
 
       <Line />
 
-      <div className="calendar-header">
+      <div className="companie-header">
         <h2 className="title-companie">Becas</h2>
         <div className="title-underline"></div>
       </div>

@@ -1,11 +1,10 @@
 .speakers-section {
   width: 100%;
-  padding: 60px 20px;
+  padding: 0px 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
 }
 
 .speakers-grid {

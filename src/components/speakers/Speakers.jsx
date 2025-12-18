@@ -10,10 +10,8 @@ export default function Speakers() {
 
   return (
     <section className="speakers-section" id="speakers">
-      <div className="calendar-header">
         <h2 className="title">Disertantes</h2>
         <div className="title-underline"></div>
-      </div>
 
       <div className="speakers-grid">
         {speakers.map((d, index) => (

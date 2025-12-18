@@ -1,108 +1,63 @@
-import { IoIosArrowDown } from "react-icons/io";
-import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useState } from "react";
 import "./Gratitude.css";
 
 export default function Accordion() {
-  const [openSponsors, setOpenSponsors] = useState(false);
-  const [openAuspician, setOpenAuspician] = useState(false);
-  const [openInstituciones, setOpenInstituciones] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const sections = [
+    {
+      title: "Sponsors Agua",
+      logos: [
+        { src: "/src/assets/sponsors/inta.png", alt: "Inta" },
+        { src: "/src/assets/sponsors/help-argentina.png", alt: "Help Argentina" },
+      ]
+    },
+    {
+      title: "Sponsors Tierra",
+      logos: [
+        { src: "/src/assets/sponsors/sociedad-rural.png", alt: "Sociedad Rural" },
+        { src: "/src/assets/sponsors/potenciar-solidario.png", alt: "Potenciar Solidario" },
+      ]
+    },
+    {
+      title: "Sponsors Fuego",
+      logos: [
+        { src: "/src/assets/sponsors/Imagotipo Crecer vertical (verde institucional sobre fondo blanco).jpg", alt: "Crecer" },
+      ]
+    }
+  ];
 
   return (
     <section className="gratitude-section" id="gratitude-id">
-      <div>
+      <div className="calendar-header">
         <h2 className="title">Agradecimientos</h2>
+        <div className="title-underline"></div>
       </div>
+
       <div className="menu-container">
-        <div className="menuDesplegable">
-          <button
-            className="menu-btn"
-            onClick={() => setOpenSponsors(!openSponsors)}
-          >
-            Sponsors Fuego {openSponsors ? <IoIosArrowUp /> : <IoIosArrowDown />}
-          </button>
+        {sections.map((section, index) => (
+          <div key={index} className={`menu-item ${activeIndex === index ? "is-open" : ""}`}>
+            <button className="menu-btn" onClick={() => toggleAccordion(index)}>
+              <span>{section.title}</span>
+              {activeIndex === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            </button>
 
-          {openSponsors && (
-            <div className="menu-content">
-              <ul>
-                <li>
-                  <img
-                    className="sponsorLogo"
-                    src="./src/assets/sponsors/help-argentina.png"
-                    alt="Help Argentina logo"
-                  />
-                </li>
-                <li>
-                  <img
-                    className="sponsorLogo"
-                    src="./src/assets/sponsors/sociedad-rural.png"
-                    alt="Sociedad Rural logo"
-                  />
-                </li>
-                <li>
-                  <img
-                    className="sponsorLogo"
-                    src="./src/assets/sponsors/potenciar-solidario.png"
-                    alt="Potenciar Solidario logo"
-                  />
-                </li>
-                <li>
-                  <img
-                    className="sponsorLogo"
-                    src="./src/assets/sponsors/inta.png"
-                    alt="Inta logo"
-                  />
-                </li>
-                <li>
-                  <img
-                    className="sponsorLogo"
-                    src="./src/assets/sponsors/Imagotipo Crecer vertical (verde institucional sobre fondo blanco).jpg"
-                    alt="Crecer logo"
-                  />
-                </li>
+            <div className="menu-content" style={{ maxHeight: activeIndex === index ? "1000px" : "0px" }}>
+              <ul className="logo-grid">
+                {section.logos.map((logo, i) => (
+                  <li key={i}>
+                    <img className="sponsor-logo" src={logo.src} alt={logo.alt} />
+                  </li>
+                ))}
               </ul>
             </div>
-          )}
-        </div>
-
-        <div className="menuDesplegable">
-          <button
-            className="menu-btn"
-            onClick={() => setOpenAuspician(!openAuspician)}
-          >
-            Sponsors Tierra {openAuspician ? <IoIosArrowUp /> : <IoIosArrowDown />}
-          </button>
-
-          {openAuspician && (
-            <div className="menu-content">
-              <ul>
-                <li>Auspiciante 1</li>
-                <li>Auspiciante 2</li>
-                <li>Auspiciante 3</li>
-              </ul>
-            </div>
-          )}
-        </div>
-
-        <div className="menuDesplegable">
-          <button
-            className="menu-btn"
-            onClick={() => setOpenInstituciones(!openInstituciones)}
-          >
-            Sponsors Agua{" "}
-            {openInstituciones ? <IoIosArrowUp /> : <IoIosArrowDown />}{" "}
-          </button>
-
-          {openInstituciones && (
-            <div className="menu-content">
-              <ul>
-                <li>Institución 1</li>
-                <li>Institución 2</li>
-                <li>Institución 3</li>
-              </ul>
-            </div>
-          )}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
