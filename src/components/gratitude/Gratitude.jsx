@@ -1,5 +1,6 @@
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useState } from "react";
+import Guardapampa from "../guardapampa/Guardapampa.jsx";
 import "./Gratitude.css";
 
 export default function Accordion() {
@@ -28,16 +29,16 @@ export default function Accordion() {
       title: "Sponsors Fuego",
       logos: [
         { src: "/src/assets/sponsors/Imagotipo Crecer vertical (verde institucional sobre fondo blanco).jpg", alt: "Crecer" },
+        { src: "/src/assets/sponsors/paralelo sur logo png (1) (1).png", alt: "Paralelo Sur" },
       ]
     }
   ];
 
   return (
     <section className="gratitude-section" id="gratitude-id">
-      <div className="calendar-header">
+      <Guardapampa />
         <h2 className="title">Agradecimientos</h2>
         <div className="title-underline"></div>
-      </div>
 
       <div className="menu-container">
         {sections.map((section, index) => (

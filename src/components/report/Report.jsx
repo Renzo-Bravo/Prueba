@@ -16,8 +16,8 @@ export default function Report() {
         <div className="fuentes-container">
           <span className="fuentes-label">Fuentes:</span>
           <div className="links-wrapper">
-            <a href="https://infotecrealico.com.ar/..." target="_blank" className="report-link">Reporte Realicó</a>
-            <a href="https://alteredu.com.ar/..." target="_blank" className="report-link">Nota AlterEdu</a>
+            <a href="https://infotecrealico.com.ar/contenido/75514/docentes-del-colegio-agropecuario-realico-presentaron-su-proyecto-en-las-jornada" target="_blank" className="report-link">Nota Infotecrealico</a>
+            <a href="https://alteredu.com.ar/cruzada-patagonica-la-escuela-agrotecnica-es-una-gran-fuente-de-recursos-didacticos-porque-trabaja-con-seres-vivos-y-variedad-de-materiales-para-la-produccion/" target="_blank" className="report-link">Nota AlterEdu</a>
           </div>
         </div>
       </div>

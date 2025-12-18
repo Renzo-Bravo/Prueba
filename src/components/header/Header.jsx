@@ -13,7 +13,12 @@ export default function Header() {
             <img src={CruzadaLogo} alt="Cruzada Patagonica Logo" />
           </a>
         </div>
-        <label className="label-hamburguesa" htmlFor="menu-hamburguesa">
+
+        <button 
+          className="label-hamburguesa" 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Abrir menú"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -23,73 +28,28 @@ export default function Header() {
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
             />
           </svg>
-        </label>
-        <input
-          className="menu-hamburguesa"
-          type="checkbox"
-          name=""
-          id="menu-hamburguesa"
-          checked={isMenuOpen}
-          onChange={() => setIsMenuOpen(!isMenuOpen)}
-        />
-        <ul className="ul-links">
+        </button>
+
+        {/* El menú ahora tiene la clase condicional 'open' */}
+        <ul className={`ul-links ${isMenuOpen ? "open" : ""}`}>
           <li className="li-links">
-            <a
-              href="#hero"
-              className="links"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Inicio
-            </a>
+            <a href="#hero" className="links" onClick={() => setIsMenuOpen(false)}>Inicio</a>
           </li>
           <li className="li-links">
-            <a
-              href="#info-id"
-              className="links"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Evento
-            </a>
+            <a href="#info-id" className="links" onClick={() => setIsMenuOpen(false)}>Evento</a>
           </li>
           <li className="li-links">
-            <a
-              href="#speakers"
-              className="links"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Disertantes
-            </a>
+            <a href="#speakers" className="links" onClick={() => setIsMenuOpen(false)}>Disertantes</a>
           </li>
           <li className="li-links">
-            <a
-              href="#calendar-id"
-              className="links"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Cronograma
-            </a>
+            <a href="#calendar-id" className="links" onClick={() => setIsMenuOpen(false)}>Cronograma</a>
           </li>
           <li className="li-links">
-            <a
-              href="#form-id"
-              className="links"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Inscripción
-            </a>
-          </li>
-          <li className="li-links">
-            <a
-              href="#footer-id"
-              className="links"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contacto
-            </a>
+            <a href="#footer-id" className="links" onClick={() => setIsMenuOpen(false)}>Contacto</a>
           </li>
         </ul>
       </nav>

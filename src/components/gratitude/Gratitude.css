@@ -1,6 +1,6 @@
 .gratitude-section {
   width: 100%;
-  padding: 60px 20px;
+  padding: 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,6 +73,7 @@
 
 .sponsor-logo {
   width: 100%;
+  min-width: 100px;
   max-width: 120px;
   height: auto;
   object-fit: contain;

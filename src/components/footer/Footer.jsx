@@ -24,7 +24,6 @@ export default function Footer() {
             <li><a href="#info-id">Evento</a></li>
             <li><a href="#speakers">Disertantes</a></li>
             <li><a href="#calendar-id">Cronograma</a></li>
-            <li><a href="#form-id">Inscripción</a></li>
             <li><a href="#contact-id">Contacto</a></li>
           </ul>
         </div>
@@ -47,9 +46,9 @@ export default function Footer() {
           </div>
           
           <div className="footer-social">
-            <a href="https://youtube.com" target="_blank" className="social-link"><i className="fab fa-youtube"></i></a>
-            <a href="https://instagram.com" target="_blank" className="social-link"><i className="fab fa-instagram"></i></a>
-            <a href="https://facebook.com" target="_blank" className="social-link"><i className="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com" target="_blank" className="social-link"><i className="fab fa-youtube"></i>YT</a>
+            <a href="https://instagram.com" target="_blank" className="social-link"><i className="fab fa-instagram"></i>IG</a>
+            <a href="https://facebook.com" target="_blank" className="social-link"><i className="fab fa-facebook-f"></i>FB</a>
           </div>
         </div>
       </section>
