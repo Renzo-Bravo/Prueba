@@ -9,7 +9,7 @@ export default function CalendarList() {
     fetch("/data/calendar.json")
       .then((res) => res.json())
       .then((data) => setCalendar(data.days))
-      .catch((err) => console.error("Error cargando cronograma:", err));
+      .catch((error) => console.error(error));
   }, []);
 
   return (
@@ -25,18 +25,19 @@ export default function CalendarList() {
             <div className="day-title">
               <h3>{day.fecha}</h3>
             </div>
-            
+
             <div className="events-list">
-              {day.eventos && day.eventos.map((evento, index) => (
-                <div className="event-row" key={index}>
-                  <div className="time-column">
-                    <span className="time-badge">{evento.hora}</span>
+              {day.eventos &&
+                day.eventos.map((evento, index) => (
+                  <div className="event-row" key={index}>
+                    <div className="time-column">
+                      <span className="time-badge">{evento.hora}</span>
+                    </div>
+                    <div className="content-column">
+                      <p className="event-activity">{evento.actividad}</p>
+                    </div>
                   </div>
-                  <div className="content-column">
-                    <p className="event-activity">{evento.actividad}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
         ))}

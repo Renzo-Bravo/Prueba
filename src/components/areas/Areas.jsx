@@ -20,7 +20,7 @@ export default function Areas() {
             </svg>
           </div>
           <h3 className="secondary-title">Energías Renovables</h3>
-          <p className="area-text">
+          <p className="text">
             Técnicas innovadoras para una producción responsable con el medio
             ambiente.
           </p>
@@ -38,7 +38,7 @@ export default function Areas() {
             </svg>
           </div>
           <h3 className="secondary-title">Sustentabilidad y Pedagogía</h3>
-          <p className="area-text">
+          <p className="text">
             Fortalecimiento de las comunidades rurales y su participación
             activa.
           </p>
@@ -56,7 +56,7 @@ export default function Areas() {
             </svg>
           </div>
           <h3 className="secondary-title">Tecnologías y Prácticas</h3>
-          <p className="area-text">
+          <p className="text">
             Herramientas digitales para mejorar la calidad educativa rural.
           </p>
         </article>

@@ -4,12 +4,12 @@ export default function Report() {
   return (
     <section className="contact-section" id="contact-id">
       <div className="ediciones">
-        <div className="calendar-header-left">
-          <h2 className="titleReport">Ediciones anteriores</h2>
+        <div className="report-header-left">
+          <h2 className="title-report">Ediciones anteriores</h2>
           <div className="title-underline-left"></div>
         </div>
         
-        <p className="textReport">
+        <p className="text-report">
           Edición 2025 “Jornadas regionales de FEDIAP Inteligencia Artificial”
         </p>
         
@@ -23,12 +23,12 @@ export default function Report() {
       </div>
 
       <div className="contacto">
-        <div className="calendar-header-left">
-          <h2 className="titleReport">Contacto</h2>
+        <div className="report-header-left">
+          <h2 className="title-report">Contacto</h2>
           <div className="title-underline-left"></div>
         </div>
         
-        <p className="textReport">Dudas, consultas y más información:</p>
+        <p className="text-report">Dudas, consultas y más información:</p>
 
         <div className="contact-methods">
           <a href="mailto:sergioruemente@cruzadapatatonica.org" className="contact-item-link">

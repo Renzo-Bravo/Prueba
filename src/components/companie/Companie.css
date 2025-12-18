@@ -107,11 +107,6 @@
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.precio-btn:hover {
-  background-color: red;
-  transform: scale(1.02);
-}
-
 @media (min-width: 768px) {
   .container,
   .container-becas {
@@ -126,7 +121,7 @@
   }
 
   .title-companie {
-    font-size: var(--fs-700);
+    font-size: var(--fs-500);
   }
 }
 

@@ -18,17 +18,10 @@
   transform: scale(1.02);
 }
 
-.info-section .text {
-  max-width: 800px;
-  line-height: 1.8;
-  color: #333;
-  text-align: center;
-  text-wrap: balance;
-}
 
 @media (min-width: 1024px) {
   .info-section {
-    padding: 80px 20px;
+    padding: 0px 20px;
   }
 
   .fediap {

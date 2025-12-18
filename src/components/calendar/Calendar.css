@@ -103,7 +103,7 @@
   }
 
   .day-title h3 {
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
   }
 
   .time-badge {
@@ -111,7 +111,7 @@
   }
 
   .event-activity {
-    font-size: var(--fs-300);
+    font-size: var(--fs-200);
   }
 }
 
@@ -127,7 +127,7 @@
   }
 
   .day-title h3 {
-    font-size: var(--fs-500);
+    font-size: var(--fs-300);
   }
 
   .time-badge {
@@ -137,6 +137,6 @@
   }
 
   .event-activity {
-    font-size: var(--fs-400);
+    font-size: var(--fs-200);
   }
 }

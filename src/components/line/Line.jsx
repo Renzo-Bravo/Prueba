@@ -1,6 +1,6 @@
 import "./Line.css";
 
-export default function Line({ width = "80%"}) {
+export default function Line({ width = "80%" }) {
   return (
     <div
       className="line"

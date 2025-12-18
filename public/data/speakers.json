@@ -1,0 +1,38 @@
+[
+  {
+    "nombre": "Gabriel Zanellato",
+    "titulo_charla": "Disertante 1",
+    "imagen": "/data/pictureSpeak/GabrielZanellato.png",
+    "link": "https://www.linkedin.com/in/gabriel-zanellato-a8188489/"
+  },
+  {
+    "nombre": "Mariano Ávalos",
+    "titulo_charla": "Disertante 2",
+    "imagen": "/data/pictureSpeak/Mariano Avalos.png",
+    "link": "https://www.linkedin.com/in/marianoavalos05/"
+  },
+  {
+    "nombre": "Agustina Sánchez Beck",
+    "titulo_charla": "Disertante 3",
+    "imagen": "/data/pictureSpeak/AgustinaSanchez.png",
+    "link": "https://www.linkedin.com/in/agustina-s%C3%A1nchez-5a129915b/"
+  },
+  {
+    "nombre": "Alejandro Dominguez",
+    "titulo_charla": "Disertante 4",
+    "imagen": "/data/pictureSpeak/AlejandroAnibalDominguez.png",
+    "link": "https://www.linkedin.com/in/alejandro-anibal-dominguez-3086338a/"
+  },
+  {
+    "nombre": "Lucas Zanovello",
+    "titulo_charla": "Disertante 5",
+    "imagen": "/data/pictureSpeak/LucasZanovello.png",
+    "link": "https://www.linkedin.com/in/lucaszanovellodise%C3%B1o/"
+  },
+  {
+    "nombre": "Luciana Proietti",
+    "titulo_charla": "Disertanet 6",
+    "imagen": "/data/pictureSpeak/Luciana Proietti.png",
+    "link": "https://www.linkedin.com/in/lu-proietti/"
+  }
+]

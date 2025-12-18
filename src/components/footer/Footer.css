@@ -29,7 +29,7 @@
 .footer-column {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   text-align: center;
 }
 
@@ -37,18 +37,18 @@
   width: 180px;
   height: auto;
   margin-bottom: 20px;
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
 }
 
 .footer-description {
-  font-size: 0.95rem;
+  font-size: var(--fs-100);
   line-height: 1.6;
   color: #bbb;
   max-width: 300px;
 }
 
 .footer-column h4 {
-  font-size: 1.2rem;
+  font-size: var(--fs-200);
   color: #fff;
   margin-bottom: 25px;
   text-transform: uppercase;
@@ -68,11 +68,7 @@
   text-decoration: none;
   color: #bbb;
   transition: color 0.3s ease;
-  font-size: 0.95rem;
-}
-
-.footer-links a:hover {
-  color: var(--primary--clr);
+  font-size: var(--fs-100);
 }
 
 .contact-info-footer {
@@ -88,17 +84,13 @@
   gap: 10px;
   color: #bbb;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: var(--fs-100);
   transition: color 0.3s ease;
 }
 
-.contact-footer:hover {
-  color: #fff;
-}
-
 .icon-footer {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   color: var(--primary--clr);
 }
 
@@ -109,8 +101,8 @@
 }
 
 .social-link {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: #222;
   color: #fff;
   border-radius: 50%;
@@ -121,23 +113,31 @@
   transition: all 0.3s ease;
 }
 
-.social-link:hover {
-  background-color: var(--primary--clr);
-  transform: translateY(-3px);
-}
-
 .footer-copy {
   text-align: center;
   padding: 25px 20px;
   background-color: black;
   border-top: 1px solid #222;
-  font-size: 0.85rem;
+  font-size: var(--fs-100);
   color: #666;
+}
+
+@media (min-width: 768px) {
+  .footer-description,
+  .footer-links a,
+  .contact-footer,
+  .footer-copy {
+    font-size: var(--fs-200);
+  }
+
+  .footer-column {
+    font-size: var(--fs-300);
+  }
 }
 
 @media (min-width: 1024px) {
   .footer-end {
-    grid-template-columns: 1.5fr 1fr 1.5fr; 
+    grid-template-columns: 1.5fr 1fr 1.5fr;
     align-items: start;
     padding: 80px 20px;
   }
@@ -147,11 +147,27 @@
     text-align: left;
   }
 
+  .footer-links a:hover {
+    color: white;
+  }
+
   .contact-info-footer {
     align-items: flex-start;
   }
 
+  .contact-footer:hover {
+    color: #fff;
+  }
+
   .footer-social {
     justify-content: flex-start;
+  }
+  .footer-copy {
+    font-size: var(--fs-100);
+  }
+
+  .social-link:hover {
+    background-color: var(--primary--clr);
+    transform: translateY(-3px);
   }
 }

@@ -65,17 +65,13 @@
   transition: background 0.3s ease;
 }
 
-.price-button:hover {
-  background-color: var(--primary--clr);
-}
-
 @media (min-width: 768px) {
   .card-title {
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
   }
 
   .description-text {
-    font-size: var(--fs-300);
+    font-size: var(--fs-200);
   }
 }
 
@@ -85,10 +81,14 @@
   }
 
   .card-title {
-    font-size: var(--fs-500);
+    font-size: var(--fs-300);
   }
 
   .price-button {
-    font-size: var(--fs-400);
+    font-size: var(--fs-200);
+  }
+
+  .price-button:hover {
+    background-color: var(--primary--clr-o);
   }
 }

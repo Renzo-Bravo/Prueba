@@ -100,12 +100,12 @@
     flex-direction: row;
     background: transparent;
     backdrop-filter: none;
-    gap: 20px;
+    gap: 2px;
     overflow: visible;
   }
 
   .links {
-    font-size:var(--fs-300);
+    font-size:var(--fs-200);
     color: var(--primary--clr);
     padding: 8px 12px;
     border-radius: 8px;

@@ -11,6 +11,7 @@
   --secondary--clr: hsl(48, 61%, 45%);
   /* -- */
   /* Fonts-size */
+  --fs-50: 14px; 
   --fs-100: 1rem; /*16*px*/
   --fs-200: 1.25rem; /*20px*/
   --fs-300: 1.5rem; /*24px*/
@@ -50,6 +51,8 @@ html {
   font-size: var(--fs-100);
   text-align: center;
   width: 90%;
+  text-align: center;
+  color: blueviolet; /*test efectos en text (No es global al 100%)*/
 }
 
 .title {
@@ -57,20 +60,21 @@ html {
   font-weight: bold;
   text-align: center;
   margin-bottom: 0.4rem;
+  /*color: aqua;*/ /*test efectos en titulos (No es global al 100%)*/
 }
 
 @media (min-width: 768px) {
   .text {
-    font-size: var(--fs-400);
+    font-size: var(--fs-200);
   }
   .title {
-    font-size: var(--fs-700);
+    font-size: var(--fs-500);
   }
 }
 
 @media (min-width: 1024px) {
   .text {
-    font-size: var(--fs-500);
+    font-size: var(--fs-200);
     width: 70%;
   }
 }

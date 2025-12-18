@@ -51,13 +51,6 @@
   text-wrap: balance;
 }
 
-.area-text {
-  font-size: var(--fs-100);
-  color: #333;
-  line-height: 1.5;
-  max-width: 300px;
-}
-
 .area-tarjeta:hover {
   transform: translateY(-5px);
 }
@@ -75,10 +68,6 @@
   }
 
   .secondary-title {
-    font-size: var(--fs-400);
-  }
-
-  .area-text{
     font-size: var(--fs-300);
   }
 
@@ -109,10 +98,6 @@
   }
 
   .secondary-title {
-    font-size: var(--fs-500);
-  }
-
-  .area-text{
     font-size: var(--fs-400);
   }
 }
