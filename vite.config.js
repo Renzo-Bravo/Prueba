@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, './src'), //No en todos funcionaba, hay links que no cuentan con el path (Funionan de todos modos, no están anclados a rutas absolutas del DEKTOP)
     },
   },
 })

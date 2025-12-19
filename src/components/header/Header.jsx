@@ -34,7 +34,6 @@ export default function Header() {
           </svg>
         </button>
 
-        {/* El menú ahora tiene la clase condicional 'open' */}
         <ul className={`ul-links ${isMenuOpen ? "open" : ""}`}>
           <li className="li-links">
             <a href="#hero" className="links" onClick={() => setIsMenuOpen(false)}>Inicio</a>

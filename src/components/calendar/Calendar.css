@@ -38,7 +38,6 @@
   border-color: var(--primary--clr);
 }
 
-/*--- Cabecera Desplegable --- */
 .day-title {
   color: #333;
   padding: 15px 20px;
@@ -53,7 +52,6 @@
   filter: brightness(0.9);
 }
 
-/*--- Titulo del dia  ---*/
 .day-title h3 {
   margin: 0;
   font-size: var(--fs-100);
@@ -71,7 +69,6 @@
   transform: rotate(180deg);
 }
 
-/*--- Desplegable (Animación) ---*/
 .events-wrapper {
   display: grid;
   grid-template-rows: 0fr; /*--- Cerrado ---*/
@@ -79,11 +76,11 @@
 }
 
 .day-card.is-active .events-wrapper {
-  grid-template-rows: 1fr; /*-- Abierto ---*/
+  grid-template-rows: 1fr; 
 }
 
 .events-list {
-  overflow: hidden; /*--- Grid ---*/
+  overflow: hidden;
 }
 
 .event-row {
@@ -191,7 +188,7 @@
   }
 
   .day-title h3 {
-    font-size: var(--fs-300);
+    font-size: var(--fs-200);
   }
 
   .event-row {
