@@ -13,7 +13,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/src/assets/images/Foto1.jpg");
+  background-image: url("/src/assets/images/Foto1.webp");
   background-size: cover;
   background-position: center;
   z-index: -2;

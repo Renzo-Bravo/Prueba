@@ -1,5 +1,5 @@
-import GuardaPampaEnt from "@/assets/design/Guardapampaentera.png";
-import GuardaPampaMed from "@/assets/design/guardapampamediana.png";
+import GuardaPampaEnt from "@/assets/design/Guardapampaentera.webp";
+import GuardaPampaMed from "@/assets/design/guardapampamediana.webp";
 import "./Guardapampa.css";
 
 export default function Guardapampa() {

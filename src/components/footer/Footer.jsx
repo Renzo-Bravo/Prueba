@@ -1,6 +1,6 @@
 import "./Footer.css";
-import Logo from "@/assets/logo/logo-en-blanco-sin-fondo.png";
-import FondoFooter from "@/assets/design/food-bank_56.png";
+import Logo from "@/assets/logo/logo-en-blanco-sin-fondo.webp";
+import FondoFooter from "@/assets/design/food-bank_56.webp";
 
 export default function Footer() {
   return (

@@ -14,18 +14,18 @@ export default function Accordion() {
     {
       title: "Sponsors Agua",
       logos: [
-        { src: "/src/assets/sponsors/inta.png", alt: "Inta" },
+        { src: "/src/assets/sponsors/inta.webp", alt: "Inta" },
       ],
     },
     {
       title: "Sponsors Tierra",
       logos: [
         {
-          src: "/src/assets/sponsors/sociedad-rural.png",
+          src: "/src/assets/sponsors/sociedad-rural.webp",
           alt: "Sociedad Rural",
         },
         {
-          src: "/src/assets/sponsors/potenciar-solidario.png",
+          src: "/src/assets/sponsors/potenciar-solidario.webp",
           alt: "Potenciar Solidario",
         },
       ],
@@ -34,11 +34,11 @@ export default function Accordion() {
       title: "Sponsors Fuego",
       logos: [
         {
-          src: "/src/assets/sponsors/Imagotipo Crecer vertical (verde institucional sobre fondo blanco).jpg",
+          src: "/src/assets/sponsors/Imagotipo Crecer vertical (verde institucional sobre fondo blanco).webp",
           alt: "Crecer",
         },
         {
-          src: "/src/assets/sponsors/paralelo sur logo png (1) (1).png",
+          src: "/src/assets/sponsors/paralelo sur logo png (1) (1).webp",
           alt: "Paralelo Sur",
         },
       ],

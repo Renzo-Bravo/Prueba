@@ -1,4 +1,4 @@
-import fediap from "@/assets/fediap/fediap-logo.png"
+import fediap from "@/assets/fediap/fediap-logo.webp"
 import Guardapampa from "../guardapampa/Guardapampa.jsx";
 import Line from "../line/Line.jsx";
 import "./Info.css";
