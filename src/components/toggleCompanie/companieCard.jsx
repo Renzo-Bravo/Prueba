@@ -6,16 +6,17 @@ export default function CompanieCard({ title, text, price }) {
 
   return (
     <article className={`glass-card ${open ? "is-open" : ""}`}>
-      <div className="card-header" onClick={() => setOpen(!open)}>
+      <button
+        className="card-header"
+        onClick={() => setOpen(!open)}
+        aria-expanded={open}
+      >
         <h3 className="card-title">{title}</h3>
         <span className="toggle-icon">{open ? "−" : "+"}</span>
-      </div>
+      </button>
 
-      <div
-        className="card-content"
-        style={{ height: open ? "350px" : "0px" }}
-      >
-        <div className="content-body" style={{ height: "350px"}}>
+      <div className={`card-content ${open ? "open" : ""}`}>
+        <div className="content-body">
           <p className="description-text">{text}</p>
           <button className="price-button">{price}</button>
         </div>
